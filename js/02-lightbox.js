@@ -7,7 +7,7 @@ container.insertAdjacentHTML('beforeend', markup);
 function createMarkup (array) {
     return array.map(({ preview, original, description }) => {
         return `<li class="gallery__item">
-        <a class="gallery__link" href="">
+        <a class="gallery__link" href="${original}">
           <img
             class="gallery__image"
             src="${preview}"
